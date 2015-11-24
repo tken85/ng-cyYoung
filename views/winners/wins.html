@@ -1,0 +1,17 @@
+<div class="container">
+<div ng-repeat ="winner in cyWinners | orderBy: '-wins'">
+  <div class="entry">
+  <div class="row">
+  <div class="col-md-12"><h3>{{winner.year}} - {{winner.firstName}} {{winner.lastName}} ({{winner.league}}): {{winner.wins}} Wins</h3></div>
+  </div>
+  <div class="row">
+  <div class="col-md-12"><h5>{{winner.team}}</h5></div>
+  </div>
+  <div class="row">
+  <div class="col-md-12">{{winner.wins}} - {{winner.losses}}</div>
+  </div>
+  <div class="row">
+  <div class="col-md-12">{{winner.era}} ERA and {{winner.strikeouts}} Ks</div>
+  </div>
+</div>
+</div>
